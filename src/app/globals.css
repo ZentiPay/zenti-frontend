@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
@@ -20,5 +22,38 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', 'Poppins', 'DM Sans', sans-serif;
+}
+
+@theme {
+  /* Light Theme Color Variables */
+  --color-light-bg: #ffffff;
+  --color-light-panel: #f8fafc;
+  --color-light-primary: #2563eb;
+  --color-light-secondary: #64748b;
+  --color-light-border: #e2e8f0;
+  --color-light-btn-primary: #2563eb;
+  --color-light-btn-secondary: #f1f5f9;
+  --color-light-bubble-user: #dbeafe;
+  --color-light-bubble-other: #f1f5f9;
+  --color-light-scroll: #cbd5e1;
+  --color-light-hover: #f1f5f9;
+
+  --color-light-success: #10b981;
+  --color-light-error: #ef4444;
+  --color-light-warning: #f59e0b;
+  --color-light-text-primary: #0f172a;
+  --color-light-text-secondary: #64748b;
+  --color-light-text-muted: #94a3b8;
+  --color-light-input-bg: #ffffff;
+  --color-light-input-border: #d1d5db;
+  --color-light-card-shadow: rgba(15, 23, 42, 0.08);
+
+  --color-light-btn-primary-hover: #1d4ed8;
+  --color-light-btn-secondary-hover: #e2e8f0;
+
+  --color-light-pending: #f59e0b;
+  --color-light-confirmed: #10b981;
+  --color-light-failed: #ef4444;
+  --color-light-processing: #8b5cf6;
 }
