@@ -35,18 +35,6 @@ export default function ContactForm() {
     }));
   };
 
-  function getEnvVariable(key: string): string {
-    const value = process.env[key];
-    if (!value) {
-      throw new Error(`Missing environment variable: ${key}`);
-    }
-    return value;
-  }
-
-  const EMAILJS_SERVICE_ID = getEnvVariable("NEXT_PUBLIC_EMAILJS_SERVICE_ID");
-  const EMAILJS_TEMPLATE_ID = getEnvVariable("NEXT_PUBLIC_EMAILJS_TEMPLATE_ID");
-  const EMAILJS_PUBLIC_KEY = getEnvVariable("NEXT_PUBLIC_EMAILJS_PUBLIC_KEY");
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -73,12 +61,18 @@ export default function ContactForm() {
     try {
       const emailjs = (await import("@emailjs/browser")).default;
 
+      const EMAILJS_SERVICE_ID: any = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const EMAILJS_TEMPLATE_ID: any = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const EMAILJS_PUBLIC_KEY: any = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+      const TO_EMAIL: any = process.env.NEXT_PUBLIC_TO_EMAIL;
+      const TO_NAME: any = process.env.NEXT_PUBLIC_TO_NAME;
+
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        to_email: "prathibhabilagi12@gmail.com",
-        to_name: "Prathibha",
+        to_email: TO_EMAIL,
+        to_name: TO_NAME,
         reply_to: formData.email,
       };
 
@@ -103,7 +97,6 @@ export default function ContactForm() {
       setTimeout(() => {
         setStatus({ type: null, message: "" });
       }, 5000);
-
     } catch (error) {
       console.error("Email send error:", error);
       let errorMessage = "Failed to send email. Please try again later.";
@@ -124,7 +117,6 @@ export default function ContactForm() {
         type: "error",
         message: errorMessage,
       });
-      
     } finally {
       setIsLoading(false);
     }
@@ -192,7 +184,6 @@ export default function ContactForm() {
               disabled={isLoading}
               required
               className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-light-btn-primary-hover"
-              defaultValue={""}
             />
           </div>
         </div>

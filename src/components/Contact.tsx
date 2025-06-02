@@ -18,7 +18,7 @@ const Contact = () => {
             <span>
               <EnvelopeIcon className="w-4 h-4 mr-2" />
             </span>{" "}
-            xxxxxxxxxx@gmail.com
+            linda@zentipay.com
           </p>
         </div>
         <div>
