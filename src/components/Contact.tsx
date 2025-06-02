@@ -14,12 +14,6 @@ const Contact = () => {
             Have questions or want to be notified when we launch? <br /> Reach
             out to us!
           </p>
-          <p className="pt-2 lg:pt-4 inline-flex items-center">
-            <span>
-              <EnvelopeIcon className="w-4 h-4 mr-2" />
-            </span>{" "}
-            linda@zentipay.com
-          </p>
         </div>
         <div>
          <ContactForm/>
