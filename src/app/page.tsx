@@ -15,14 +15,13 @@ const Home = () => {
       whileInView={{ opacity: 1 }}
       className="min-h-screen flex flex-col bg-light-bg"
     >
-      <div className="max-w-xs lg:max-w-7xl mx-auto">
-        <Header />
+      <Header />
+      <div className="max-w-xs md:max-w-5xl lg:max-w-7xl mx-auto">
         <HeroSection />
         <Feature />
         <Contact />
-        <Footer />
       </div>
-      
+      <Footer />
     </motion.div>
   );
 };
