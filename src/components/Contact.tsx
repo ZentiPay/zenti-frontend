@@ -1,11 +1,9 @@
 "use client"
 
-import { useState } from 'react'
+import React from 'react'
 import { EnvelopeIcon } from '@heroicons/react/16/solid'
-import { Field, Label, Switch } from '@headlessui/react'
 
 const Contact = () => {
-  const [agreed, setAgreed] = useState(false)
 
   return (
     <div id="contact" className="py-12 lg:py-24">

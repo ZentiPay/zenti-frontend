@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import Image from "next/image";
 
 const navigation = [
   { name: "Product", href: "#product" },
@@ -16,10 +18,10 @@ const Header = () => {
     <header className="sticky top-0 inset-x-0 z-50 mb-6 bg-white">
       <nav className="flex items-center justify-between py-4 lg:py-6">
         <div className="flex lg:flex-1">
-          <a href="/">
+          <Link href="/">
             <span className="sr-only">Zenti pay</span>
-            <img className="h-6 w-12" src="/logo.png" alt="Zenti Pay" />
-          </a>
+            <Image className="h-6 w-12" src="/logo.png" alt="Zenti Pay" />
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -51,10 +53,10 @@ const Header = () => {
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="/">
+            <Link href="/">
               <span className="sr-only">Zenti pay</span>
-              <img className="h-6 w-12" src="/logo.png" alt="Zenti Pay" />
-            </a>
+              <Image className="h-6 w-12" src="/logo.png" alt="Zenti Pay" />
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
