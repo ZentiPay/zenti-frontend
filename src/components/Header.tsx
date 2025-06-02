@@ -15,15 +15,15 @@ const navigation = [
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="sticky top-0 inset-x-0 z-50 mb-6 bg-white">
-      <nav className="flex items-center justify-between py-4 lg:py-6">
+    <header className="sticky top-0 inset-x-0 z-50 mb-6 bg-white border-b-1 border-blue-100">
+      <nav className="max-w-xs md:max-w-2xl lg:max-w-7xl mx-auto flex items-center justify-between py-4 lg:py-6">
         <div className="flex lg:flex-1">
           <Link href="/">
-            <span className="sr-only">Zenti pay</span>
-            <Image className="h-6 w-12" src="/logo.png" alt="Zenti Pay" />
+            <span className="sr-only">ZentiPay</span>
+            <Image height={24} width={48} src="/logo.png" alt="ZentiPay" />
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex md:hidden lg:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -33,7 +33,7 @@ const Header = () => {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden md:flex lg:flex md:gap-x-8 lg:gap-x-12">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -48,14 +48,14 @@ const Header = () => {
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
-        className="lg:hidden"
+        className="md:hidden lg:hidden"
       >
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/">
-              <span className="sr-only">Zenti pay</span>
-              <Image className="h-6 w-12" src="/logo.png" alt="Zenti Pay" />
+              <span className="sr-only">ZentiPay</span>
+              <Image height={24} width={48} src="/logo.png" alt="ZentiPay" />
             </Link>
             <button
               type="button"

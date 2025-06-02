@@ -1,24 +1,18 @@
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
-} from "@heroicons/react/24/outline";
-
 const FEATURES = [
   {
-    name: "Private",
-    description: "Zenti Pay Private",
-    icon: LockClosedIcon,
+    name: "Low-cost",
+    description: "Low volume-based fee, no additional monthly fees",
+    icon: "/icons/cost.svg",
   },
   {
-    name: "Compliant",
-    description: "Zenti Pay Compliant",
-    icon: CloudArrowUpIcon,
+    name: "Fast",
+    description: "Instant settlement, no chargebacks",
+    icon: "/icons/fast.svg",
   },
   {
-    name: "AI assistant",
-    description: "Zenti Pay AI assistant",
-    icon: ArrowPathIcon,
+    name: "Easy-to-use",
+    description: "AI assistants help manage your digital wallet and payments",
+    icon: "/icons/easy.svg",
   },
 ];
 
