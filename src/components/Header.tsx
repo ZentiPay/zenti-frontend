@@ -16,11 +16,11 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className="sticky top-0 inset-x-0 z-50 mb-6 bg-white border-b-1 border-blue-100">
-      <nav className="max-w-xs md:max-w-2xl lg:max-w-7xl mx-auto flex items-center justify-between py-4 lg:py-6">
+      <nav className="max-w-xs md:max-w-2xl lg:max-w-7xl mx-auto flex items-center justify-between py-4 lg:py-5">
         <div className="flex lg:flex-1">
           <Link href="/">
             <span className="sr-only">ZentiPay</span>
-            <Image height={24} width={48} src="/logo.png" alt="ZentiPay" />
+            <Image height={32} width={48} src="/logo.png" alt="ZentiPay" />
           </Link>
         </div>
         <div className="flex md:hidden lg:hidden">
@@ -55,7 +55,7 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <Link href="/">
               <span className="sr-only">ZentiPay</span>
-              <Image height={24} width={48} src="/logo.png" alt="ZentiPay" />
+              <Image height={32} width={48} src="/logo.png" alt="ZentiPay" />
             </Link>
             <button
               type="button"
