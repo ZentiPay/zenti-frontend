@@ -1,17 +1,17 @@
 const FEATURES = [
   {
-    name: "Low-cost",
-    description: "Low volume-based fee, no additional monthly fees",
+    name: "Low-Cost Transactions",
+    description: "Transact privately and directly within the trusted ZentiPay community. No expensive middlemen involved.",
     icon: "/icons/cost.svg",
   },
   {
-    name: "Fast",
-    description: "Instant settlement, no chargebacks",
+    name: "Fast & Secure",
+    description: "Enjoy quick, compliant transactions with verified users and built-in fraud protection.",
     icon: "/icons/fast.svg",
   },
   {
     name: "Easy-to-use",
-    description: "AI assistants help manage your digital wallet and payments",
+    description: "Let AI assistant simplify your digital wallet management and streamline payments.",
     icon: "/icons/easy.svg",
   },
 ];

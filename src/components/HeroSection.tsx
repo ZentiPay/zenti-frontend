@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
             className="text-lg md:text-2xl lg:text-3xl text-gray-700 mb-1 lg:mb-4"
             variants={TEXT_VARIANTS}
           >
-            Send USDC like a TEXT
+            Send USDC like a text
           </motion.p>
           <motion.div className="mb-8" variants={TEXT_VARIANTS}>
             <span className="inline-block px-8 py-2 text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-tr from-blue-300 via-blue-500 to-blue-900 bg-clip-text text-transparent">

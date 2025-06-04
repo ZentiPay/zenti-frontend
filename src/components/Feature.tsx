@@ -33,7 +33,7 @@ const Feature = () => {
             {FEATURES.map((feature) => (
               <motion.div
                 key={feature.name}
-                className="relative w-full md:w-48 lg:w-84 flex flex-col items-center px-8 pt-4 pb-8 border-1 border-light-border rounded-xl shadow-light-card-shadow"
+                className="relative w-full md:w-48 lg:w-84 flex flex-col items-center px-4 md:px-6 lg:px-6 pt-4 pb-8 border-1 border-light-border rounded-xl shadow-light-card-shadow"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
